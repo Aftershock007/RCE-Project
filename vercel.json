@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "name": "rce_project",
+  "builds": [{ "src": "Server.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/Server.js" }]
+}
