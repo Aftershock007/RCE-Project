@@ -1,6 +1,9 @@
 {
   "version": 2,
   "name": "rce_project",
-  "builds": [{ "src": "Server.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/Server.js" }]
+  "builds": [{ "src": "server.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/server.js" }],
+  "scripts": {
+    "build": "npm run build"
+  }
 }
